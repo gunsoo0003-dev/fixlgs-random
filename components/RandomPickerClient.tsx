@@ -469,9 +469,37 @@ export default function RandomPickerClient() {
         </section>
       </main>
 
-      <footer className="mx-auto max-w-6xl px-5 py-10 text-sm text-slate-500">
-        <div className="border-t border-slate-200 pt-6">
-          © FIXLGS Random. Simple tools for useful data.
+      <footer className="mx-auto max-w-6xl px-5 pb-10 text-sm text-slate-500">
+        <div className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm">
+          <p className="font-bold text-slate-700">
+            입력한 명단은 서버에 저장되지 않으며, 브라우저 안에서만 추첨에
+            사용됩니다.
+          </p>
+
+          <div className="mt-4 flex flex-col gap-3 border-t border-slate-100 pt-4 md:flex-row md:items-center md:justify-between">
+            <p>© FIXLGS Random. Simple tools for useful data.</p>
+
+            <nav className="flex flex-wrap gap-4 font-bold">
+              <a
+                href="https://fixlgs.com/terms"
+                className="text-slate-600 transition hover:text-emerald-600"
+              >
+                이용약관
+              </a>
+              <a
+                href="https://fixlgs.com/privacy"
+                className="text-slate-600 transition hover:text-emerald-600"
+              >
+                개인정보처리방침
+              </a>
+              <a
+                href="https://fixlgs.com/contact"
+                className="text-slate-600 transition hover:text-emerald-600"
+              >
+                문의
+              </a>
+            </nav>
+          </div>
         </div>
       </footer>
     </div>
